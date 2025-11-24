@@ -73,7 +73,7 @@ $vcode_for_proof = "proof-" . substr(hash("sha256", $String_final), 0, 12);
     <p id="performance"> </p> <br><br><br><br><br>
     <footer>
       <small>
-        &copy; <span id="year">2022</span>, Ivan Shiller <a href="https://github.com/AlmostDeadDude/CountIt2-Interface" target="_blank" rel="noopener noreferrer">
+        &copy; <span id="year">2022</span>, Ivan Shiller <a href="https://github.com/AlmostDeadDude/3D_point_labeling" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-github"></i>
         </a>
       </small>

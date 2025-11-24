@@ -870,7 +870,7 @@ if (!IS_DEMO) {
             <footer class="imp" align="center"> &copy University of Stuttgart | <a href="http://www.uni-stuttgart.de/home/impressum/index.html" style="color:white; text-decoration:none" onclick='leaving_alert()'>Legal Notice</a>
               | <a href="http://www.ifp.uni-stuttgart.de/datenschutz.en.html" style="color:white; text-decoration:none" onclick='leaving_alert()'>Privacy Notice</a><br><br>
               <small>
-                &copy; <span id="year">2022</span>, Ivan Shiller <a href="https://github.com/AlmostDeadDude/CountIt2-Interface" target="_blank" rel="noopener noreferrer">
+                &copy; <span id="year">2022</span>, Ivan Shiller <a href="https://github.com/AlmostDeadDude/3D_point_labeling" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </small>
