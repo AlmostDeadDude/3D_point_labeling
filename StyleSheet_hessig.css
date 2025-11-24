@@ -1,0 +1,429 @@
+html {
+    background-color: #34495e;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: #ecf0f1;
+    width: 1000px;
+    overflow-y: scroll;
+    font-size: 81.25%;
+    font-family: "Lato", sans-serif;
+    transform-origin: top left;
+}
+
+table.full-height {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#handling td {
+    text-align: center;
+}
+
+#minusClick,
+#plusClick {
+    cursor: pointer;
+    user-select: none;
+}
+
+#minusClick:hover,
+#plusClick:hover {
+    transform: scale(1.05);
+}
+
+#minusClick:active,
+#plusClick:active {
+    transform: scale(0.95);
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+div > div {
+    background: #dddddd;
+}
+
+figure {
+    display: inline-block;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.loader {
+    border: 16px solid #95a5a6;
+    border-radius: 50%;
+    border-top: 16px solid #d9584a;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 200%;
+    color: #d9584a;
+}
+
+h2 {
+    font-size: 120%;
+    color: #d9584a;
+}
+
+label {
+    font-size: 130%;
+}
+
+.radio_item {
+    display: none !important;
+}
+
+.label_item {
+    opacity: 0.1;
+}
+
+.radio_item:checked + label {
+    opacity: 1;
+}
+
+label {
+    cursor: pointer;
+}
+
+.radio-toolbar {
+    margin-bottom: 20px;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    width: 32%;
+    background-color: #95a5a6;
+    border: 1px solid #95a5a6;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 2px solid #ecf0f1;
+    text-align: center;
+    margin: 3px;
+    border-radius: 24px;
+    font-weight: bold;
+}
+
+.radio-toolbar input[type="radio"] + label img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.radio-toolbar input[type="radio"]:hover + label {
+    background-color: yellow;
+    color: black;
+    border-color: black;
+    transition-duration: 0.3s;
+}
+
+.radio-toolbar input[type="radio"]:hover + label img,
+.radio-toolbar input[type="radio"]:checked + label img {
+    transform: scale(1.4);
+    transition-duration: 0.3s;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: greenyellow;
+    color: Black;
+    border-color: black;
+}
+
+#selection_title,
+#selection {
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+    outline: none;
+}
+
+#fb {
+    width: 80%;
+    padding: 5px 10px;
+    background: #ecf0f1;
+    border: 1px solid #95a5a6;
+}
+
+#fb:hover {
+    background-color: rgb(250, 250, 197);
+    transition-duration: 0.5s;
+}
+
+#submit {
+    background-color: #95a5a6;
+    border: #95a5a6;
+    color: white;
+    padding: 16px 32px;
+    text-align: left;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 10px;
+    border-bottom: red solid 4px;
+    cursor: pointer;
+}
+
+#submit:disabled {
+    opacity: 0.65;
+    background-color: #95a5a6;
+    color: black;
+    cursor: not-allowed;
+    border-bottom: red solid 4px;
+}
+
+#submit:enabled {
+    background-color: #b79b67;
+    border-bottom: green solid 4px;
+}
+
+#submit:hover:enabled {
+    background-color: #cd9a3d;
+    color: black;
+}
+
+#end {
+    background-color: #95a5a6;
+    border: #95a5a6;
+    color: white;
+    padding: 16px 32px;
+    text-align: left;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+}
+
+#end:hover {
+    background-color: rgb(184, 184, 3);
+}
+
+#reset {
+    background-color: #95a5a6;
+    border: #95a5a6;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.button {
+    background-color: #95a5a6;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #95a5a6;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #d5dcdc;
+    color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #95a5a6;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: "\002B";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.imp {
+    color: white;
+    padding: 5px;
+    background: linear-gradient(90deg, transparent, #95a5a6, transparent);
+    width: 100%;
+    max-height: 100px;
+}
+
+#trHeader {
+    text-decoration: underline;
+    color: #990000;
+}
+
+.centerCell {
+    text-align: center;
+}
+
+/* scrollbar custom view */
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #292036;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3d3647;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #685f75;
+}
+
+::-webkit-scrollbar-corner {
+    background: #292036;
+    visibility: hidden;
+}
+
+:root {
+    scrollbar-color: #999999 #333333 !important;
+    scrollbar-width: none !important;
+}
+
+/* @media (max-width: 1200px) {
+  body {
+    height: 2264px;
+    transform: scale(0.8) translate(-0%, -283px);
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    transform: scale(0.6) translate(-0%, -755px);
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    transform: scale(0.5) translate(-0%, -1132px);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.4) translate(-0%, -500px);
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    transform: scale(0.3) translate(-0%, -500px);
+  }
+} */
